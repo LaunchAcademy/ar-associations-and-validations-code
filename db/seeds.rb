@@ -11,8 +11,8 @@ Recipe.create(title: "chard")
 Recipe.create(title: "collards")
 
 Comment.create(body: "blah blah blah", recipe: recipe_1)
-Comment.create(body: "bler blerg lberg" recipe_id: recipe_1.id )
-Comment.create(body: "bler blerg lberg" recipe: recipe_1 )
+Comment.create(body: "bler blerg lberg", recipe_id: recipe_1.id )
+Comment.create(body: "bler blerg lberg", recipe: recipe_1 )
 
 Comment.create(body: "blah blah blah", recipe_id: 3)
 Comment.create(body: "blah blah blah", recipe_id: 3)
@@ -23,10 +23,6 @@ Comment.create(body: "blah blah blah", recipe_id: 2)
 Comment.create(body: "blah blah blah", recipe_id: 2)
 Comment.create(body: "blah blah blah", recipe_id: 5)
 Comment.create(body: "blah blah blah", recipe_id: 1)
-Comment.create(body: "blah blah blah", recipe_id: 5)
-Comment.create(body: "blah blah blah", recipe_id: 3)
-Comment.create(body: "blah blah blah", recipe_id: 2)
-Comment.create(body: "blah blah blah", recipe_id: 2)
 
 # Many to Many
 ingredient_1 = Ingredient.create(name: "pepper")

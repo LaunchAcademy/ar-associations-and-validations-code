@@ -5,7 +5,7 @@ class CreateComments < ActiveRecord::Migration[5.2]
       t.belongs_to :recipe, null: false
       # t.integer  :recipe_id, null: false
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
