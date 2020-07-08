@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 2020_04_08_140205) do
 
   create_table "comments", force: :cascade do |t|
     t.string "body", null: false
-    t.integer "recipe_id", null: false
+    t.bigint "recipe_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["recipe_id"], name: "index_comments_on_recipe_id"
   end
 
   create_table "ingredients", force: :cascade do |t|
