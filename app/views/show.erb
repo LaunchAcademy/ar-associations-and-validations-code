@@ -1,16 +1,20 @@
-<h1><%= @recpe.title %></h1>
+<h1><%= @recipe.title %></h1>
 
 <h3>Comments:</h3>
 
 <ul>
-  <%# <% @comments.each do |comment| %> %>
+  <% @comments.each do |comment| %>
     <li>
-      <%# <%= comment.body %> %>
+      <%= comment.body %>
     </li>
-  <%# <% end %> %>
+  <% end %>
 </ul>
 
 <h3>Ingredients:</h3>
 <ul>
-  i gave up cuz many to many is too tough....OR IS IT?
+    <% @ingredients.each do |ingredient| %>
+    <li>
+      <%= ingredient.name%>
+    </li>
+
 </ul>

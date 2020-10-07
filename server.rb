@@ -11,8 +11,10 @@ get '/recipes' do
 end
 
 get '/recipes/:id' do
-  # how would we query for all related comments for this recipe?
-  # how would we query for all related ingredients? 
+  id = params[:id]
+  @recipe = Recipe.find(id)
+  @comments = @recipe.comments
+  @ingredients = @recipe.ingredients
 
   erb :show
 end

@@ -1,7 +1,7 @@
 class Comment < ActiveRecord::Base
   
   validates :body, presence: true
-  # validates :recipe_id, presence: true
+  validates :recipe_id, presence: true
   # not required in Rails 5
 
   belongs_to :recipe
