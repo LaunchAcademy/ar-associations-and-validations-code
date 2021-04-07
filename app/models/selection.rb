@@ -1,5 +1,8 @@
 class Selection < ActiveRecord::Base 
-  belongs_to :recipe
+  belongs_to :recipe 
   belongs_to :ingredient
 
-end
+  validates :recipe, presence: true
+  validates :ingredient, presence: true
+
+end 
